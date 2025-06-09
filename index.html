@@ -101,12 +101,8 @@
                     <!-- style="margin-bottom: 40px;" -->
                     <h2>Exceptional Craftsmanship</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Iure accusantium autem magni voluptates iusto nobis placeat sed sunt.
-                        Consequuntur delectus eaque ipsa deserunt placeat saepe perferendis doloribus quidem. Aliquid, vero.
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam sequi 
-                        sint quae similique fuga excepturi asperiores facere itaque, delectus ut.
-                        Voluptates et ullam assumenda non sequi enim recusandae praesentium esse?
+                        Full service Gunsmith in Warrensburg, MO. We are a quality based and customer service focused business specialized
+                        in Firearm Sales, Services, Maintenance, Repair, Restoration, and Customization.
                     </p>
                 </div>
 
@@ -180,16 +176,14 @@
                 <div class="footer-contact">
                     <div class="footer-header">
                         <h2>ADDRESS</h2>
-                        <p>682 NW 11th Rd. Warrensburg, MO</p>
+                        <p>682 NW 11th Road, Warrensburg, MO</p>
                     </div>
                     <div class="footer-header">
                         <h2>HOURS</h2>
                         <div class="footer-hours">
-                            <p>Monday - Friday: 8:00 am - 5:00 pm</p>
-                            <p>Saturday: 10:00 am - 4:00 pm</p>
+                            <p>Monday - Tuesday - Thursday - Friday: 10:00 am - 6:00 pm</p>
+                            <p>Saturday: 8:00 am - 5:00 pm</p>
                         </div>
-            
-                       
                     </div>
                     <div class="footer-header">
                         <h2>PHONE</h2><p>(660) 624-2939</p>
@@ -206,88 +200,73 @@
     <!-- <div class="backTop" style="text-decoration:none; background-color: rgb(36, 37, 37); color: whitesmoke;"><a href="#top">back to top</a></div> -->
 
 
-         <!-- script to shrink the nav header when scrolling -->
-         <script>
-            var head = document.getElementById("header");
-            var imgLogo = document.getElementById("logoImg");
-    
-            var map = document.querySelector('map[name="workmap"]');
-            const areas = map.querySelectorAll('area');
-    
-            // var linkz = document.querySelector('left-links' > a);
-    
-            const linkz = document.getElementsByClassName('left-links');
-    
-            // window.onscroll = function()
+         
+          <!-- script to shrink the nav header when scrolling -->
+       <script>
+        var head = document.getElementById("header");
+        var imgLogo = document.getElementById("logoImg");
+
+        var map = document.querySelector('map[name="workmap"]');
+        const areas = map.querySelectorAll('area');
+
+        // var linkz = document.querySelector('left-links' > a);
+
+        const linkz = document.getElementsByClassName('left-links');
+
+        // window.onscroll = function()
+        {
+            if(document.documentElement.scrollTop > 50)
             {
-                if(document.documentElement.scrollTop > 50)
-                {
-                    head.style.height = "70px";
-                    head.style.padding = "3px";
-                    head.style.paddingRight = "0px";
-                    head.style.paddingLeft = "0px";
-                    imgLogo.style.maxWidth = "70px"
-                    // head.style.fontSize = "8px";
-                    // head.style.justifyContent = "space-evenly";
-    
-                    // linkz.style.fontSize = "8px;";
-                }
-                else 
-                {
-                        head.style.height = "120px";
-                        head.style.padding = "10px";
-                        head.style.paddingRight = "0px";
-                        head.style.paddingLeft = "0px";
-               
-                }
+                // head.style.height = "70px";
+                // head.style.padding = "3px";
+                // head.style.paddingRight = "0px";
+                // head.style.paddingLeft = "0px";
+                // imgLogo.style.maxWidth = "70px"
+
+
+
+
+                // head.style.fontSize = "8px";
+                // head.style.justifyContent = "space-evenly";
+
+                // linkz.style.fontSize = "8px;";
             }
-    
-            // w3 school solution
-            window.onscroll = function() {scrollFunction()};
-    
-            function scrollFunction()
+            else 
             {
-                if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
-                    head.style.fontSize = "30px";
-                    head.style.height = "70px";
-                    head.style.paddingRight = "0px";
-                    head.style.paddingLeft = "0px";
-                    imgLogo.style.maxWidth = "80px"
-                    imgLogo.style.transition = ".03"
-                    // head.style.padding = "3px";
-                    // head.style.margin-top = "20px";
-                }
-                else
-                {
-                    head.style.fontSize = "90px";
                     head.style.height = "120px";
+                    head.style.padding = "10px";
                     head.style.paddingRight = "0px";
                     head.style.paddingLeft = "0px";
-                    imgLogo.style.maxWidth = "150px"
-                     imgLogo.style.transition = ".03"
-                        // head.style.padding = "10px";
-                }
+           
             }
+        }
 
+        // w3 school solution
+        window.onscroll = function() {scrollFunction()};
 
-
-
-            (() => {
-  'use strict';
-  // Page is loaded
-  const objects = document.getElementsByClassName('asyncImage');  Array.from(objects).map((item) => {
-    // Start loading image
-    const img = new Image();
-    img.src = item.dataset.src;
-    // Once image is loaded replace the src of the HTML element
-    img.onload = () => {
-      item.classList.remove('asyncImage');
-      return item.nodeName === 'IMG' ? 
-        item.src = item.dataset.src :        
-        item.style.backgroundImage = `url(${item.dataset.src})`;
-    };
-  });
-})();
-        </script>
+        function scrollFunction()
+        {
+            if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+                head.style.fontSize = "30px";
+                head.style.height = "70px";
+                head.style.paddingRight = "0px";
+                head.style.paddingLeft = "0px";
+                imgLogo.style.maxWidth = "80px"
+                imgLogo.style.transition = ".09"
+                // head.style.padding = "3px";
+                // head.style.margin-top = "20px";
+            }
+            else
+            {
+                head.style.fontSize = "90px";
+                head.style.height = "120px";
+                head.style.paddingRight = "0px";
+                head.style.paddingLeft = "0px";
+                imgLogo.style.maxWidth = "150px"
+                 imgLogo.style.transition = ".03"
+                    // head.style.padding = "10px";
+            }
+        }
+    </script>
 </body>
 </html>

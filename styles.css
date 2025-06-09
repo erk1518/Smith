@@ -41,7 +41,7 @@ body{
 /* NORMAL COMPUTER SCREEN */
 @media (min-width: 1101px) {
     .banner{
-        margin-top: 5%;
+        margin-top: 100px;
         padding: 90px;
     }
 
@@ -61,7 +61,7 @@ body{
     .craft-middle{
         flex-direction: row;
         width: 84%;
-        text-align: justify;
+        /* text-align: justify; */
         padding: 20px;
         gap: 20px;
     }
@@ -320,7 +320,7 @@ body{
 .left-links a:hover, .right-links a:hover{
     text-decoration: underline;
     text-underline-offset: 8px;
-    color: rgb(52, 199, 235);;
+    color: rgba(112, 201, 201, 0.781);
 }
 
 .teleNum{
@@ -357,6 +357,7 @@ body{
     border-bottom: 2px solid whitesmoke;
     background-color: 55,68,64,0.98;
     /* margin-bottom: 30px; */
+    /* padding: 10px; */
     
 }
 
@@ -387,7 +388,7 @@ body{
     /* padding: 20px; */
     text-wrap: wrap;
     /* padding: 30px; */
-    font-size: 24px;
+    font-size: 20px;
     text-align: start;
     /* padding-left: 175px; */
     /* margin-top: 10px; */
@@ -535,7 +536,7 @@ hr{
 
 .mission-statment p{
     /* border: 2px solid blue; */
-    width: 75%;
+    width: 85%;
 }
 
 .gunsmith{
@@ -546,7 +547,7 @@ hr{
     /* width: 60%; */
     text-align: justify;
     font-size: 1.7vw;
-    padding: 20px;
+    /* padding: 20px; */
     /* justify-content: space-evenly; */
     align-items: center;
     justify-content: center;
@@ -556,7 +557,7 @@ hr{
     margin-top: 20px;
     background-color: rgba(55,68,64,0.98);
     border-radius: 5px;
-    width: 70%;
+    width: 80%;
     /* height: 600px; */
 }
 
@@ -581,14 +582,15 @@ hr{
 .gunsmith-name{
     /* border: 3px solid slateblue; */
     padding: 3%;
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 .gunsmith-info p{
     /* border: 2px solid red; */
     font-size: xx-large;
     /* height: 50%; */
-    width: 80%;
+    width: 90%;
+    letter-spacing: normal;
 }
 
 
@@ -865,7 +867,7 @@ hr{
     /* flex-direction: column; */
     /* gap: 5px; */
     justify-content: center;
-    width: 67%;
+    /* width: 67%; */
     align-self: center;
     background-color: rgba(55,68,64,0.98);
     border-radius: 20px;
@@ -905,6 +907,7 @@ hr{
     font-weight: 300;
     letter-spacing: 0.0375em;
     line-height: 2;
+    width: 300px;
 }
 
 #messageArea{
@@ -988,6 +991,7 @@ hr{
 .smith_specific{
     /* border: 5px solid blueviolet; */
     display: flex;
+    text-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1048,6 +1052,7 @@ hr{
 /* Gallery page */
 .image-container{
     margin-top: 10%;
+    border: 2px solid blue;
 }
 
 .photo-gallery{
@@ -1055,25 +1060,102 @@ hr{
     gap: 20px;
     padding: 10px;
     justify-content: center;
+    flex-wrap: wrap;
+    /* margin-bottom: 5%; */
+    border: 8px solid yellow;
     
 }
 
 .photo-col{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* justify-content: center; */
     /* align-items: center; */
-    gap: 20px;
+    /* gap: 200px; */
+    border: 2px solid red;
 }
 
 .photo img{
     width: 500px;
-    /* width: 100%; */
     height: auto;
     border-radius: 5px;
     object-fit: cover;
+    border: 2px solid lime;
+    /* height: 40vh; */
+    /* flex-grow: 1; */
+    /* gap: 30px; */
+
+    max-height: 100%;
+    min-width: 100%;
+    /* object-fit: cover; */
+    /* vertical-align: bottom; */
 }
 
+
+
+/* photo gallery using lists */
+.photo-ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: 2px solid yellow; */
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 40px;
+    margin-top: 10%;
+    list-style: none;
+}
+
+.photo-li{
+    display: flex;
+    height: auto;
+    flex-grow: 1;
+    /* border: 2px solid red; */
+    object-fit: cover;
+}
+
+.photo-img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: contain; 
+    background-color: black;
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+#topBtn{
+    /* border: 2px solid whitesmoke;
+    color: whitesmoke;
+    background-color: black;
+    padding: 10px;
+    width: 150px;
+    margin: auto;
+    font-size: x-large; */
+
+    /* display: none; */
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    z-index: 99;
+    font-size: 20px;
+    font-weight: bolder;
+    border: 2px solid whitesmoke;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgba(0,0,0, 0.8);;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 25px;
+    
+}
+
+#topBtn:hover{
+    background-color: rgb(52, 199, 235);
+}
 
 /* footer */
 .footer{
@@ -1132,11 +1214,12 @@ hr{
     flex: auto;
     height: 100%;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     justify-content: flex-start;
     align-items: center;
     /* gap: 5px; */
     padding: 3px;
+    margin: auto;
 }
 
 .footer-header p{
@@ -1173,6 +1256,7 @@ hr{
     margin-top: 5px;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 
 .footer-info h2{
@@ -1222,6 +1306,15 @@ hr{
         display: none;
     }
 
+    .banner{
+        margin-top: 60px;
+    }
+
+    /* .body{
+        margin: 0;
+        margin-top: 50%;
+    } */
+
     .tablet-body
     {
             /* border: 2px solid yellow; */
@@ -1230,7 +1323,15 @@ hr{
             justify-content: space-evenly;
             background-color: black;
             align-items: center;
+            position: fixed;
+            width: 100%;
+            border-bottom: 2px solid whitesmoke;
     }
+
+  
+   /* .banner{
+    margin-top: 6%;
+   } */
 
     .tablet-header
     {
@@ -1263,16 +1364,18 @@ hr{
     }
 
     .banner-name h1{
-        padding: 20px;
+        padding: 10px;
         /* border: 2px solid yellow; */
-        font-size: larger;
+        font-size: xx-large;
     }
     .banner-name p{
         font-size: large;
         /* border: 2px solid purple; */
+        padding: 10px;
     }
     .banner-name{
         padding: 10px;
+        
         /* border: 2px solid blue; */
     }
 
@@ -1297,15 +1400,17 @@ hr{
     }
 
     .craft-img img{
-        /* width: 90%; */
+        width: 90%;
         height: auto;
+        
+        margin: auto;
         margin-top: 4%;
     }
 
     .craft-para {
         margin-top: 20px;
         /* width: 70%; */
-        margin-left: 5%;
+        /* margin-left: 5%; */
         /* padding: 20px; */
         /* padding: 40px */
         justify-content: center;
@@ -1313,7 +1418,7 @@ hr{
     }
 
     .craft-para h2{
-        font-size: x-large;
+        /* font-size: x-large; */
         justify-content: center;
         align-items: center;
         /* margin-left: 50%;; */
@@ -1321,8 +1426,10 @@ hr{
 
     .craft-para p{
         /* border: 2px solid red; */
+        text-align: center;
         width: 80%;
-        padding: 5%;
+        padding: 2%;
+        font-size: larger;
     }
 
     .review-container h1{
@@ -1351,7 +1458,7 @@ hr{
 
     .footer{
         padding: 20px;
-        border: 2px solid purple;
+        /* border: 2px solid purple; */
     }
 
     .all-cols{
@@ -1379,10 +1486,11 @@ hr{
         /* border: 2px solid blue; */
         padding: 10px;
         display: flex;
-        width: 65%;
+        /* width: 65%; */
         height: auto;
         justify-content: center;
         align-items: center;
+        /* margin-top: 0; */
     }
 
     .about-hr{
@@ -1405,9 +1513,11 @@ hr{
 
     .mission-statment p{
         font-size: x-large;
-        line-height: 30px;
+        /* line-height: 30px; */
         /* justify-content: left; */
-        text-align:center;
+        /* text-align:justify; */
+        width: 100%;
+        letter-spacing: normal;
     }
 
     .gunsmith img{
@@ -1417,9 +1527,9 @@ hr{
     }
 
     .gunsmith-name{
-        font-size: larger;
+        font-size: x-large;
         text-align: center;
-        padding-top: 5px;
+        /* padding-top: 5px; */
         /* border: 2px solid yellow; */
     }
 
@@ -1429,11 +1539,12 @@ hr{
     }
 
     .gunsmith-info p{
-        font-size: large;
-        line-height: 30px;
+        font-size: x-large;
+        /* line-height: 30px; */
         /* padding: 10px; */
         justify-content: center;
-        text-align: center;
+        text-align: justify;
+        /* letter-spacing: normal; */
     }
 
     /* tablet GALLERY */
@@ -1461,6 +1572,24 @@ hr{
     }
 
 
+    .photo-ul{
+        /* margin-top: 20%; */
+    }
+
+    .photo-img{
+        width: 330px;
+    }
+
+    @media (max-width: 760px) 
+    {
+        .photo-img{
+            width: 250px;
+        }
+
+
+    }
+
+
     /* tablet services page */
 
     .services-quote{
@@ -1468,6 +1597,7 @@ hr{
         /* padding: 600px; */
         justify-content: center;
         align-items: center;
+        /* margin-top: 0; */
         /* border: 2px solid blue; */
     }
     .services-quote h1{
@@ -1475,7 +1605,9 @@ hr{
         font-size: large;
         /* border: 2px solid red; */
         margin-bottom: 50px;
-        width: 100%;
+        width: 85%;
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
 
     .expandServBTN{
@@ -1507,17 +1639,24 @@ hr{
 
     /* tablet contact page */
     .contact-header,.messageHeader{
-        border: 2px solid yellow;
+        /* border: 2px solid yellow; */
         font-size: x-large;
         /* padding-top: 3%; */
-        /* margin-top: 3%; */
+        /* margin-top: 10%; */
         padding: 2%;
+    }
+
+
+    .contact-header{
+        margin-top: 10%;
     }
 
     .contactBox{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 90%;
+        /* margin-top: 10%; */
         /* border: 2px solid red; */
     }
 
@@ -1543,8 +1682,8 @@ hr{
     }
 
     .contactInfo{
-        border: 2px solid whitesmoke;
-        border-radius: 20px;
+        /* border: 2px solid whitesmoke; */
+        /* border-radius: 20px; */
         flex-shrink: 1;
         justify-content: center;
         align-items: center;
@@ -1553,9 +1692,16 @@ hr{
         margin-top: 10px;
         padding-top: 10px;
         /* border: 2px solid red; */
-        width: 94%;
+        width: 95%;
         flex: auto;
         font-size: medium;
+        border-left: none;
+        border-top: 2px solid whitesmoke;
+    }
+
+    #messageArea{
+        height: 200px;
+        width: 400px;
     }
 
     .contactInfo h1{
@@ -1569,7 +1715,7 @@ hr{
         width: 80%;
         justify-content: center;
         align-items: center;
-        border: 2px solid lime;
+        /* border: 2px solid lime; */
       
     }
 
@@ -1578,7 +1724,8 @@ hr{
     }
 
     .contact-header{
-        margin-top: 3%;
+        margin-top: 10%;
+        font-size: xx-large;
     }
 
     .messageField{
@@ -1597,7 +1744,7 @@ hr{
         /* resize: both; */
         width: 100%;
         margin: auto;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
 
     .fields{
@@ -1624,41 +1771,127 @@ hr{
         justify-content: flex-start;
         /* border: 2px solid blue; */
     }
+
+    @media screen and (max-width: 709px) 
+    {
+        .contact-header
+        {
+            margin-top: 28%;
+        }
+
+        .banner{
+            margin-top: 125px;
+        }
+        .banner-name{
+            padding: 10px;
+        }
+        .about-logo{
+            margin-top: 125px;
+        }
+
+        .mission-statment p{
+            font-size: large;
+            text-align: justify;
+        }
+        .gunsmith-info p{
+            font-size: large;
+        }
+
+        .services-quote{
+            margin-top: 120px;
+        }
+
+        .photo-ul{
+            /* border: 2px solid blue; */
+            margin-top: 20%;
+        }
+    } 
 } 
 
 /* MOBILE PHONE */
 @media screen and (max-width: 425px)
 {
-    #header, .banner, .tablet-body{
+    #header, .banner, .tablet-body, #topBtn{
         display: none;
     }
 
     body{
         /* border: 2px solid lime; */
         margin: 0;
+        /* margin-top: 15%; */
     }
 
     .mobile-body{
         /* border: 2px solid blue; */
         background-color: black;
-        /* position: fixed;
+        position: fixed;
         top: 0;
-        width: 100%; */
+        width: 100%;
+        border-bottom: 2px solid whitesmoke;
+    }
 
+    .craft-img{
+        margin-top: 15%;
+    }
+
+    .mobile-body-about{
+        /* border:2px solid lime; */
+        background-color: black;
+        position: sticky;
+        top: 0;
+        /* width: 100%; */
+        /* height: 40px; */
+        z-index: 100;
+        border-bottom: 2px solid whitesmoke;
+    }
+
+    .mobile-body-about a{
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 5px;
     }
 
     .mobile-header{
         display: flex;
-        /* border: 2px solid blue; */
+        /* border: 2px solid red; */
         justify-content: space-evenly;
         align-items: center;
-        position: fixed;
+        /* width: 95%; */
+
+
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 2px solid pink; */
+        /* padding: 5px; */
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: whitesmoke;
+        align-items: center;
+        /* width: 100%; */
     }
+
+    .mobile-header-about{
+        display: flex;
+        justify-content: space-evenly;
+        /* border: 2px solid lime; */
+        /* padding: 5px; */
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: whitesmoke;
+        align-items: center;
+        /* width: 100%;
+        position: sticky;
+        top: 0px; */
+    }
+
+
+
     .mobile-header a{
         /* border: 2px solid whitesmoke; */
         text-decoration: none;
         color: whitesmoke;
         padding: 5px;
+        /* width: 95%; */
         
     }
 
@@ -1666,8 +1899,12 @@ hr{
         display: flex;
         justify-content: space-evenly;
         /* border: 2px solid pink; */
-        padding: 5px;
+        /* padding: 5px; */
+        padding-top: 5px;
+        padding-bottom: 5px;
         color: whitesmoke;
+        align-items: center;
+        /* width: 100%; */
     }
 
     .mobile-social a{
@@ -1689,8 +1926,6 @@ hr{
         /* margin-bottom: 50px; */
         padding: 10px;
     }
-
-
 
     .banner-name p{
         /* border: 2px solid red; */
@@ -1722,7 +1957,8 @@ hr{
     }
 
     .craft-para p{
-        margin-left: 10px;
+        /* margin-left: 10px; */
+        text-align: center;
     }
 
 
@@ -1748,7 +1984,7 @@ hr{
         margin: auto;
         max-width: 80%;
         max-height: 100%;
-        margin-top: 5px;
+        margin-top: 40px;
     }
 
     .reviews h1{
@@ -1835,6 +2071,7 @@ hr{
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 8%;
         /* margin-top: 4%; */
     }
 
@@ -1857,8 +2094,9 @@ hr{
         /* border: 2px solid red; */
         font-size: medium;
         justify-content: center;
-        text-align: center;
+        text-align: justify;
         width: 90%;
+        letter-spacing: initial;
     }
 
     .gunsmith img{
@@ -1875,9 +2113,15 @@ hr{
         /* border: 2px solid red; */
     }
 
+    .gunsmith{
+        width: 90%;
+    }
+
     .gunsmith-info p{
         font-size: medium;
-        padding: 5px;
+        /* padding: 5px; */
+        width: 90%;
+        letter-spacing: normal;
     }
 
     /* MOBILE GALLERY */
@@ -1894,7 +2138,20 @@ hr{
         /* border: 2px solid yellow; */
     }
 
+    .photo-img{
+        width: 200px;
+    }
+
+    .photo-ul{
+        margin-top: 0;
+    }
+
     /* MOBILE SERVICES */
+    .services-quote{
+        /* border: 2px solid yellow; */
+        /* margin-top: 0; */
+    }
+
     .servicesContent{
         /* border: 2px solid purple; */
         width: 80%;
@@ -1911,21 +2168,22 @@ hr{
 
 /* MOBILE CONTACT */
 .contact-header,.messageHeader{
-    border: 2px solid rebeccapurple;
-    font-size: larger;
-    padding-top: 2%;
+    /* border: 2px solid rebeccapurple; */
+    font-size: x-large;
+    /* padding-top: 2%; */
+    /* margin-top: 0; */
 }
 
 .services-quote h1{
-    font-size: small;
-    width: 100%;
+    font-size: medium;
+    width: 85%;
 }
 
 .contactBox{
     flex-direction: column;
     /* border: 2px solid red; */
-    /* width: 80%; */
-    border: none;
+    width: 90%;
+    /* border: none; */
 }
 
 .other_contact{
@@ -1935,15 +2193,17 @@ hr{
     gap: 25px;
     margin-top: 10px;
     padding-top: 10px;
+    padding: 10px;
     /* border: 2px solid yellow; */
-    width: 83%;
-    font-size: xx-large;
+    /* width: 83%; */
+    font-size: medium;
+    /* border-bottom: blue; */
 }
 .smith_specific p{
     display: flex;
     width: auto;
     /* border: 2px solid blue; */
-    font-size: small;
+    /* font-size: small; */
     text-wrap: wrap;
     text-align: center;
     
@@ -1953,6 +2213,8 @@ hr{
     margin-top: 10px;
     padding-top: 10px;
     font-size: large;
+    border-left: none;
+    border-top: 2px solid whitesmoke;
 }
 
 .contactInfo h1{
@@ -1973,7 +2235,7 @@ hr{
 }
 
 .messageField{
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1984,14 +2246,27 @@ hr{
     width: 65%;
     margin: auto;
     /* width: 90%; */
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     /* margin-left: 5%; */
     
 }
 
+#name{
+    width: 230px;
+}
+
+#eMail{
+    width: 230px;
+}
+
+#messageArea{
+    width: 250px;
+    height: 200px;
+}
+
 .messageWithBtn{
-    border: 2px solid lime;
-    width: 65%;
+    /* border: 2px solid lime; */
+    /* width: 65%; */
     /* height: 200px; */
     margin: auto;
 } 
