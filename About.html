@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="description" content="Local gunsmith and firearm business">
+    <meta name="author" content="Erik Huber">
     <title>WA Jackson Firearms | About</title>
     <link rel="icon" type="images/png" href="images/logo.png">
     <link rel="stylesheet" href="styles.css">
@@ -19,12 +22,8 @@
 
         <div class="logo">
             <!-- insert logo here -->
-            <!-- <img src="C:\Users\erk15\Desktop\GunSmith\images\logo-placeholder-image.png" alt="logo for business" id="logoImg" style="object-fit:fill; width:140%; height: 140%;" usemap="#workmap"> -->
-            <!-- <img src="images/Company Logo-Firearms.svg" alt="logo for business" id="logoImg" style="object-fit:fill; width:140%; height: 140%;" usemap="#workmap"> -->
 
             <img src="images/logo.png" alt="logo for business" id="logoImg" style="object-fit:fill; max-width: 150px; height: auto" usemap="#workmap">
-        
-
 
             <!-- gets the circle clickable area in the logo on the header when header is full sized-->
               <!-- coords="80, 80, 60" -->
@@ -83,7 +82,7 @@
 
     <div class="about">
         <div class="about-logo">
-            <img src="images/logo.png" alt="Logo for business" style="width: 100%; height: auto;   margin-left: 30px; margin-top: auto;" usemap="#workmappp">
+            <img src="images/logo.png" alt="Logo for business" class="bizLogo">
         </div>
 
         
@@ -91,7 +90,7 @@
         
         <!-- <h1 class="about-header">Our Mission</h1> -->
         <div class="mission-statment">
-            <p>
+            <p style="letter-spacing: normal;">
                 At W.A. Jackson Firearms, our mission is to uphold the highest standards of craftsmanship while delivering personalized, trustworthy service to every customer. 
                 As a full-service gunsmith, we blend time-honored techniques with modern innovation to bring out the best in every firearm we touch.
                 From antique restorations to custom coatings, bluing, or simple cleanings, we approach each project with precision, respect, and enthusiasm. We believe every 
@@ -103,7 +102,7 @@
         
         <div class="gunsmith">
             <!-- style="width: 350px;" -->
-                <img src="images/Warren.jpg" >
+                <img src="images/Warren final.png" >
                 <div class="gunsmith-info">
                     <h1 class="gunsmith-name" style="text-decoration: underline;">Meet Your New Gunsmith</h1>
                     <p>From the time he was a small boy, Warren had a deep curiosity about how things
@@ -145,35 +144,42 @@
                 <div class="social-links">
                     <a href="https://facebook.com/61569341517739" target="_blank">FaceBook</a>
                     <a href="https://www.instagram.com/warrenandrewjacksonfirearms" target="_blank">Instagram</a>
-                    <a href="www.youtube.com">YouTube</a>
+                    <a href="https://www.youtube.com/@WAJacksonFA" target="_blank">YouTube</a>
                     <a href="contact.html">Contact</a>
                 </div>
             </div>
         </div>   
 
             <div class="footer-info">
-                <!-- <h2 style=" letter-spacing: 2px; font-size: small; text-align: center; margin-bottom: 5px;">WARREN A. JACKSON FIREARMS</h2> -->
                 <div class="footer-contact">
                     <div class="footer-header">
-                        <h2>ADDRESS</h2><p>682 NW 11th Rd. Warrensburg, MO</p>
+                        <h2>ADDRESS</h2>
+                        <!-- <a href="google.navigation:q=682+NW+11th+Road,+Warrensburg,+MO" class="navLink">682 NW 11th Rd. Warrensburg, MO 64093</a> -->
+                            <div class="navLink">
+                        
+                            <a href='https://maps.apple.com/maps?q=682 NW 11th Rd. Warrensburg, MO 64093' target="_blank">
+                                <a href='https://maps.google.com/?q=682 NW 11th Rd. Warrensburg, MO 64093' target="_blank">
+                                     682 NW 11th Rd. Warrensburg, MO 64093
+                                </a>
+                            </a>
+                    </div>
                     </div>
                     <div class="footer-header">
                         <h2>HOURS</h2>
                         <div class="footer-hours">
-                            <p>Monday - Friday 9am to 5pm</p>
-                            <p>Saturday 10am to 5pm</p>
+                            <p>Monday - Tuesday - Thursday - Friday: 10am - 6pm</p>
+                            <p>Saturday: 8am - 5pm</p>
                         </div>
-            
-                       
                     </div>
                     <div class="footer-header">
-                        <h2>PHONE</h2><p>(660) 624-2939</p>
+                        <h2>PHONE</h2><a href="tel:660-624-2939"style="text-align: center;">(660) 624-2939</a>
                     </div>
                     <div class="footer-header">
-                        <h2>EMAIL</h2><p>info@gmail.com</p>
+                        <h2>EMAIL</h2><a href="mailto:wjmm32@gmail.com" class="emailLink">wjmm32@gmail.com</a>
                     </div>
                 </div>
             </div>
+    </div>
 
        <!-- script to shrink the nav header when scrolling -->
      <!-- script to shrink the nav header when scrolling -->
@@ -197,13 +203,8 @@
                 // head.style.paddingRight = "0px";
                 // head.style.paddingLeft = "0px";
                 // imgLogo.style.maxWidth = "70px"
-
-
-
-
                 // head.style.fontSize = "8px";
                 // head.style.justifyContent = "space-evenly";
-
                 // linkz.style.fontSize = "8px;";
             }
             else 
@@ -216,7 +217,7 @@
             }
         }
 
-        // w3 school solution
+
         window.onscroll = function() {scrollFunction()};
 
         function scrollFunction()
