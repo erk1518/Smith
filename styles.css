@@ -837,39 +837,39 @@ hr{
 }
 
 #metalFinish{
-    background-image: url(./images/wood2.png);
+    background-image: url(./images/wood2.jpg);
 }
 
 #cleanOil{
-    background-image: url(./images/wood1.png);
+    background-image: url(./images/wood1.jpg);
 }
 
 #sight{
-    background-image: url(./images/wood3.png);
+    background-image: url(./images/wood3.jpg);
 }
 
 #muzzle{
-    background-image: url(./images/wood4.png);
+    background-image: url(./images/wood4.jpg);
 }
 
 #stock{
-    background-image: url(./images/wood5.png);
+    background-image: url(./images/wood5.jpg);
 }
 
 #generalAction{
-    background-image: url(./images/wood6.png);
+    background-image: url(./images/wood6.jpg);
 }
 
 #handGun{
-    background-image: url(./images/wood7.png);
+    background-image: url(./images/wood7.jpg);
 }
 
 #ar{
-    background-image: url(./images/wood8.png);
+    background-image: url(./images/wood8.jpg);
 }
 
 #shotgun{
-    background-image: url(./images/wood9.png);
+    background-image: url(./images/wood9.jpg);
 }
 
 
@@ -1955,7 +1955,7 @@ hr{
 /* MOBILE PHONE */
 @media screen and (max-width: 425px)
 {
-    #header, .banner, .tablet-body, #topBtn{
+    #header, .banner, .tablet-body{
         display: none;
     }
 
