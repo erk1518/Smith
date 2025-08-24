@@ -977,7 +977,7 @@ hr{
 
 #name, #eMail, #phoneNum{
     /* border: 2px solid pink; */
-    height: 1.5rem;
+    /* height: 1.5rem; */
     padding: 12px;
     font-size: 1rem;
     font-weight: 300;
